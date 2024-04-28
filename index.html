@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,99 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inovação e Cuidados com as Baterias</title>
     <style>
-         body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-        }
-
-        .book {
-            max-width: 700px;
-            margin: 20px auto;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-        }
-
-        .cover {
-            background-color: #333333;
-            color: #ffffff;
-            padding: 40px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            text-align: center;
-            margin-bottom: 20px;
-        }
-
-        .cover h1 {
-            margin: auto;
-            font-size: 28px;
-            font-weight: bold;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            line-height: 1.4;
-        }
-
-        .page {
-            padding: 20px;
-            line-height: 1.6;
-            text-align: justify;
-            color: #333333;
-        }
-
-        
-        /* Linha azul */
-        .section-divider {
-            margin-bottom: 20px;
-            border-bottom: 2px solid #1a237e;
-            padding-bottom: 10px;
-        }
-       
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-
-        .section-divider {
-    clear: both;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #1a237e;
-    padding-bottom: 10px;
+               /* Configurações básicas do corpo e fontes */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Mudança de fonte para melhor legibilidade */
+    background-color: #f4f4f4; /* Cor de fundo mais suave */
+    color: #333; /* Cor do texto mais escura para melhor contraste */
+    line-height: 1.6; /* Aumento do espaçamento entre linhas */
 }
 
-        @media screen and (max-width: 600px) {
-            .book {
-                width: auto;
-                border-radius: 0;
-            }
+/* Estilização do container principal */
+.book {
+    max-width: 800px; /* Largura máxima ajustada */
+    margin: 40px auto;
+    background-color: #fff;
+    border-radius: 12px; /* Bordas mais arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 40px; /* Mais espaço interno */
+}
 
-            .cover {
-                border-radius: 0;
-                width: auto; /* Ajusta a largura do fundo do título */
-                 margin: 0 auto; /* Centraliza o título horizontalmente */
-            }
+/* Cabeçalho com melhor destaque */
+.cover {
+    background-color: #5c67f2; /* Cor de fundo mais vibrante */
+    color: #ffffff;
+    padding: 40px;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    text-align: center;
+}
 
-            .cover h1 {
-        font-size: 20px; /* Diminui o tamanho da fonte */
+.cover h1 {
+    font-size: 32px; /* Tamanho de fonte aumentado */
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+/* Estilização das páginas de conteúdo */
+.page {
+    padding: 30px;
+    text-align: justify;
+    border-bottom: 1px solid #e2e2e2; /* Linha sutil na parte inferior */
+}
+
+/* Melhorias na visualização de imagens */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+.image-container img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+/* Divisor de seção estilizado */
+.section-divider {
+    margin: 40px 0;
+    border-bottom: 3px solid #5c67f2; /* Linha mais destacada */
+}
+
+@media screen and (max-width: 600px) {
+    .book {
+        width: 90%%; /* Ajusta a largura do container para 100% */
+        margin: 0; /* Remove a margem externa para alinhar com a imagem */
+        padding: 0 20px; /* Adiciona padding interno horizontal */
     }
 
+    .cover {
+        width: auto; /* Permite que o fundo do título ajuste sua largura automaticamente */
+        padding: 20px; /* Padding uniforme no título */
+        margin-top: 10px; /* Adiciona espaço no topo entre o título e o início da página */
+        border-radius: 0; /* Assegura que não haja bordas arredondadas no topo */
+    }
 
+    .cover h1 {
+        font-size: 26px; /* Aumenta um pouco o tamanho da fonte do título */
+        text-align: center; /* Centraliza o título */
+        padding: 0 20px; /* Adiciona padding horizontal para alinhar com a imagem */
+    }
 
-            .page h2 {
-            text-align: center;
-            }
+    .image-container {
+        width: calc(100% - 40px); /* Ajusta a largura da imagem para alinhar com o título */
+        margin: 10px auto 20px; /* Espaço acima e abaixo da imagem */
+    }
 
-            
-            .image-container {
-                float: none;
-                margin-right: 0;
-                margin-bottom: 20px;
-                text-align: center;
-            }
-        }
+    .image-container img {
+        width: 100%; /* Ajusta a imagem para preencher o container */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .page {
+        padding: 20px; /* Aumenta o padding para um melhor espaço de leitura */
+        font-size: 16px; /* Aumenta o tamanho da fonte para facilitar a leitura */
+        text-align: justify; /* Justifica o texto */
+    }
+
+    .page h2, .page h3 {
+        text-align: center; /* Centraliza os títulos de subseção */
+        margin: 20px 0; /* Adiciona margem vertical para separar os títulos do texto */
+    }
+}
     </style>
 </head>
 <body>
