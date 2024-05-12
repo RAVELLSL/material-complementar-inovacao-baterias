@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -70,7 +71,7 @@ body {
 
 @media screen and (max-width: 600px) {
     .book {
-        width: 90%%; /* Ajusta a largura do container para 100% */
+        width: 90%; /* Ajusta a largura do container para 90% da largura da tela */
         margin: 0; /* Remove a margem externa para alinhar com a imagem */
         padding: 0 20px; /* Adiciona padding interno horizontal */
     }
@@ -80,10 +81,11 @@ body {
         padding: 20px; /* Padding uniforme no título */
         margin-top: 10px; /* Adiciona espaço no topo entre o título e o início da página */
         border-radius: 0; /* Assegura que não haja bordas arredondadas no topo */
+        text-align: center; /* Centraliza o texto */
     }
 
     .cover h1 {
-        font-size: 26px; /* Aumenta um pouco o tamanho da fonte do título */
+        font-size: 26px; /* Ajusta o tamanho da fonte do título */
         text-align: center; /* Centraliza o título */
         padding: 0 20px; /* Adiciona padding horizontal para alinhar com a imagem */
     }
@@ -100,8 +102,8 @@ body {
 
     .page {
         padding: 20px; /* Aumenta o padding para um melhor espaço de leitura */
-        font-size: 16px; /* Aumenta o tamanho da fonte para facilitar a leitura */
-        text-align: justify; /* Justifica o texto */
+        font-size: auto; /* Define o tamanho da fonte para automático */
+        text-align: left; /* Alinha o texto à esquerda */
     }
 
     .page h2, .page h3 {
@@ -109,6 +111,7 @@ body {
         margin: 20px 0; /* Adiciona margem vertical para separar os títulos do texto */
     }
 }
+
     </style>
 </head>
 <body>
